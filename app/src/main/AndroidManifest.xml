@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.customviewtest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.YouKuMenuActivity" />
+        <activity android:name=".Activity.ViewPagerActivity" />
+        <activity android:name=".Activity.PopupWindowActivity" />
+        <activity android:name=".Activity.CustomSwitchActivity" />
+        <activity android:name=".Activity.CustomPropertiesActivity" />
+        <activity android:name=".Activity.WaveActivity" />
+        <activity android:name=".Activity.ContactIndexActivity" />
+        <activity android:name=".Activity.MoveBallActivity" />
+        <activity android:name=".Activity.ViewPagerFunctionActivity"/>
+        <activity android:name=".Activity.SlideLayoutActivity"/>
+    </application>
+
+</manifest>

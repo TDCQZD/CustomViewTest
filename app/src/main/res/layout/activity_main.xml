@@ -1,81 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/titlebar" />
 
-    <Button
-        android:id="@+id/youku_Menu"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="youku_Menu"
-        android:text="优酷菜单"
-        android:textAllCaps="false" />
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="viewPger"
-        android:text="广告条效果"
-        android:textAllCaps="false" />
+        <include layout="@layout/titlebar" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="popup"
-        android:text="下拉框效果"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/youku_Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="youku_Menu"
+            android:text="优酷菜单"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="Switch"
-        android:text="自定义开关"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="viewPger"
+            android:text="广告条效果"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="properties"
-        android:text="自定义属性"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="popup"
+            android:text="下拉框效果"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="wave"
-        android:text="水波纹"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Switch"
+            android:text="自定义开关"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="index"
-        android:text="联系人快速索引"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="properties"
+            android:text="自定义属性"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="moveBall"
-        android:text="跟随手指移动的小球"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="wave"
+            android:text="水波纹"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="viewPagerFunction"
-        android:text="仿ViewPager功能"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="index"
+            android:text="联系人快速索引"
+            android:textAllCaps="false" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="SlideLayout"
-        android:text="侧滑删除Item"
-        android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveBall"
+            android:text="跟随手指移动的小球"
+            android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="viewPagerFunction"
+            android:text="仿ViewPager功能"
+            android:textAllCaps="false" />
 
-</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="SlideLayout"
+            android:text="侧滑删除Item"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="UseCanvas"
+            android:text="画布Canvas使用"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CanvasPicture"
+            android:text="Canvas之图片文字"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

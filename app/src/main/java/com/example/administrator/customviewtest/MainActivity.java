@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.example.administrator.customviewtest.Activity.CanvasActivity;
+import com.example.administrator.customviewtest.Activity.CanvasPictureActivity;
 import com.example.administrator.customviewtest.Activity.ContactIndexActivity;
 import com.example.administrator.customviewtest.Activity.CustomPropertiesActivity;
 import com.example.administrator.customviewtest.Activity.CustomSwitchActivity;
@@ -38,32 +40,49 @@ public class MainActivity extends AppCompatActivity {
     public void youku_Menu(View view) {
         startActivity(new Intent(MainActivity.this, YouKuMenuActivity.class));
     }
+
     public void viewPger(View view) {
         startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
     }
+
     public void popup(View view) {
         startActivity(new Intent(MainActivity.this, PopupWindowActivity.class));
     }
+
     public void Switch(View view) {
         startActivity(new Intent(MainActivity.this, CustomSwitchActivity.class));
-           }
+    }
+
     public void properties(View view) {
         startActivity(new Intent(MainActivity.this, CustomPropertiesActivity.class));
     }
+
     public void wave(View view) {
         startActivity(new Intent(MainActivity.this, WaveActivity.class));
     }
+
     public void index(View view) {
         startActivity(new Intent(MainActivity.this, ContactIndexActivity.class));
     }
+
     public void moveBall(View view) {
         startActivity(new Intent(MainActivity.this, MoveBallActivity.class));
     }
+
     public void viewPagerFunction(View view) {
         startActivity(new Intent(MainActivity.this, ViewPagerFunctionActivity.class));
     }
+
     public void SlideLayout(View view) {
         startActivity(new Intent(MainActivity.this, SlideLayoutActivity.class));
     }
+
+    public void UseCanvas(View view) {
+        startActivity(new Intent(MainActivity.this, CanvasActivity.class));
+    }
+    public void CanvasPicture(View view) {
+        startActivity(new Intent(MainActivity.this, CanvasPictureActivity.class));
+    }
+
 
 }

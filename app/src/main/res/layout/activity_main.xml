@@ -93,6 +93,12 @@
             android:onClick="CanvasPicture"
             android:text="Canvas之图片文字"
             android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Path"
+            android:text="Path路径"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 

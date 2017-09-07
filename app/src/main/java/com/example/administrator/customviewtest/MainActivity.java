@@ -13,6 +13,7 @@ import com.example.administrator.customviewtest.Activity.ContactIndexActivity;
 import com.example.administrator.customviewtest.Activity.CustomPropertiesActivity;
 import com.example.administrator.customviewtest.Activity.CustomSwitchActivity;
 import com.example.administrator.customviewtest.Activity.MoveBallActivity;
+import com.example.administrator.customviewtest.Activity.PathActivity;
 import com.example.administrator.customviewtest.Activity.PopupWindowActivity;
 import com.example.administrator.customviewtest.Activity.SlideLayoutActivity;
 import com.example.administrator.customviewtest.Activity.ViewPagerActivity;
@@ -82,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void CanvasPicture(View view) {
         startActivity(new Intent(MainActivity.this, CanvasPictureActivity.class));
+    }
+    public void Path(View view) {
+        startActivity(new Intent(MainActivity.this, PathActivity.class));
     }
 
 

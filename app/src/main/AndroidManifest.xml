@@ -29,6 +29,8 @@
         <activity android:name=".Activity.CanvasActivity" />
         <activity android:name=".Activity.CanvasPictureActivity"
             android:hardwareAccelerated="false"/>
+        <activity android:name=".Activity.PathActivity"
+            android:hardwareAccelerated="false"/>
     </application>
 
 </manifest>

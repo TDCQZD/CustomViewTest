@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -17,7 +18,7 @@ import android.view.View;
 
 public class RadarView extends View {
     private int count = 6;                //正六边形个数
-    private float angle = (float) (Math.PI*2/count);
+    private float angle = (float) (Math.PI*2/count);//每条边对应的角度
     private float radius;                   //网格最大半径
     private int centerX;                  //中心X
     private int centerY;                  //中心Y
@@ -118,6 +119,8 @@ public class RadarView extends View {
             path.moveTo(centerX, centerY);
             float x = (float) (centerX+radius*Math.cos(angle*i));
             float y = (float) (centerY+radius*Math.sin(angle*i));
+            double v = Math.random() * (1 - 9);
+            Log.i("TAG", "V:"+v);
             path.lineTo(x, y);
             canvas.drawPath(path, mainPaint);
         }

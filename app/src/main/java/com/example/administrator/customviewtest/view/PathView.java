@@ -33,14 +33,14 @@ public class PathView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        mHeight = h;
-        mWidth = w;
+        mHeight = h/2;
+        mWidth = w/2;
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.translate(mWidth / 2, mHeight / 2);  // 移动坐标系到屏幕中心(宽高数据在onSizeChanged中获取)
+        canvas.translate(mWidth , mHeight );  // 移动坐标系到屏幕中心(宽高数据在onSizeChanged中获取)
         canvas.scale(1,-1);                         //  翻转y坐标轴
 
         mPaint.setColor(Color.BLACK);           // 画笔颜色 - 黑色
@@ -86,15 +86,26 @@ public class PathView extends View {
 //        path.addRect(-200,-200,200,200, Path.Direction.CW);
 //        src.addCircle(0,0,100, Path.Direction.CW);// src添加一个圆
 //        path.set(src);
-        path.addCircle(0,0,50, Path.Direction.CW);
+//        path.addCircle(0,0,50, Path.Direction.CW);
 
-        Path dst = new Path();                      // dst中添加一个矩形
-        dst.addRect(-200,-200,200,200, Path.Direction.CW);
+//        Path dst = new Path();                      // dst中添加一个矩形
+//        dst.addRect(-200,-200,200,200, Path.Direction.CW);
 
-        path.offset(100,0,dst);                     // 平移
-        canvas.drawPath(dst, mPaint);
+//        path.offset(100,0,dst);                     // 平移
+//        canvas.drawPath(dst, mPaint);
 
-        mPaint.setColor(Color.BLUE);                // 更改画笔颜色
+//        mPaint.setColor(Color.BLUE);                // 更改画笔颜色
+
+        /*
+        rXxx方法
+         */
+//        src.moveTo(20,20);
+//        src.rLineTo(20,40);
+//        canvas.drawPath(src,mPaint);
+//        mPaint.setColor(Color.BLUE);
+        path.moveTo(20,20);
+//        path.lineTo(20,40);
+        path.rLineTo(20,40);
         canvas.drawPath(path,mPaint);               // 绘制Path
     }
 }

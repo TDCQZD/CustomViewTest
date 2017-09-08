@@ -99,6 +99,12 @@
             android:onClick="Path"
             android:text="Path路径"
             android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bezier"
+            android:text="贝塞尔曲线"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 

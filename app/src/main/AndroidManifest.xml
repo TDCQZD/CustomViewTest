@@ -27,10 +27,16 @@
         <activity android:name=".Activity.ViewPagerFunctionActivity" />
         <activity android:name=".Activity.SlideLayoutActivity" />
         <activity android:name=".Activity.CanvasActivity" />
-        <activity android:name=".Activity.CanvasPictureActivity"
-            android:hardwareAccelerated="false"/>
-        <activity android:name=".Activity.PathActivity"
-            android:hardwareAccelerated="false"/>
+        <activity
+            android:name=".Activity.CanvasPictureActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".Activity.PathActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".Activity.BezierCurveActivity"
+            android:hardwareAccelerated="false" />
+
     </application>
 
 </manifest>

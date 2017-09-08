@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.example.administrator.customviewtest.Activity.BezierCurveActivity;
 import com.example.administrator.customviewtest.Activity.CanvasActivity;
 import com.example.administrator.customviewtest.Activity.CanvasPictureActivity;
 import com.example.administrator.customviewtest.Activity.ContactIndexActivity;
@@ -86,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Path(View view) {
         startActivity(new Intent(MainActivity.this, PathActivity.class));
+    }
+    public void bezier(View view) {
+        startActivity(new Intent(MainActivity.this, BezierCurveActivity.class));
     }
 
 

@@ -21,6 +21,6 @@ public class PathActivity extends AppCompatActivity {
 
         PathView mPathView = new PathView(this);
         RadarView mRadarView=new RadarView(this);
-        setContentView(mRadarView);
+        setContentView(mPathView);
     }
 }

@@ -13,6 +13,7 @@ import com.example.administrator.customviewtest.Activity.CanvasPictureActivity;
 import com.example.administrator.customviewtest.Activity.ContactIndexActivity;
 import com.example.administrator.customviewtest.Activity.CustomPropertiesActivity;
 import com.example.administrator.customviewtest.Activity.CustomSwitchActivity;
+import com.example.administrator.customviewtest.Activity.MilletVoidLoadingActivity;
 import com.example.administrator.customviewtest.Activity.MoveBallActivity;
 import com.example.administrator.customviewtest.Activity.PathActivity;
 import com.example.administrator.customviewtest.Activity.PopupWindowActivity;
@@ -91,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
     public void bezier(View view) {
         startActivity(new Intent(MainActivity.this, BezierCurveActivity.class));
     }
-
+    public void millet(View view) {
+        startActivity(new Intent(MainActivity.this, MilletVoidLoadingActivity.class));
+    }
 
 }
